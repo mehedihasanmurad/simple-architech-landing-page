@@ -153,8 +153,40 @@ main {
     /* top: 250px; */
 }
 
-.features-image img {
-    /* width: 100%; */
+
+.some-fact-header {
+    margin-left: 50px;
+    margin-bottom: 120px;
+}
+
+.some-fact-header h1 {
+    font-family: 800;
+    font-size: 40px;
+}
+
+.some-fact-header p {
+    color: gray;
+}
+
+
+.awards {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-bottom: 30px;
+}
+
+.awards-title {
+    border: 2px solid #FF900E;
+    height: 150px;
+    width: 200px;
+    text-align:center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.awards-title p {
+    color: gray;
 }
 
 
@@ -191,6 +223,13 @@ main {
     bottom: -60px;
     left: 75px;
 }
+
+.awards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-left: 90px;
+}
     
 }
 
@@ -209,6 +248,14 @@ main {
     .features {
         flex-direction: column;
     }
+
+    .team-container {
+        margin-left: 0px;
+    }
+
+    .awards-title {
+    margin-left: 15px;
+    margin-right: 15px;
 
 }
 
