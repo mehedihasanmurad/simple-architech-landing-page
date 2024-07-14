@@ -104,6 +104,59 @@ main {
 }
 
 
+.features {
+    display: flex;
+    margin-top: 150px;
+    margin-left:50px;
+    margin-right: 50px;   
+    margin-bottom: 150px;
+}
+
+.features-main {
+    padding-right: 100px;
+
+}
+
+.features-main h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.features-main p {
+    color: gray;
+}
+
+.features-title {
+    /* background-color: aqua; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.features-image {
+    position: relative;
+}
+
+.features-demo {
+    background-color:#FF900E;
+    height: 80px;
+    width: 200px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    padding: 25px 10px;
+    position: absolute;
+    bottom: -50px;
+    left: -70px;
+    border-radius: 10px;
+    /* top: 250px; */
+}
+
+.features-image img {
+    /* width: 100%; */
+}
+
 
 
 /* mobile devices */
@@ -122,6 +175,23 @@ main {
     .team-image {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .features {
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: -80px;
+        flex-direction: column;
+}
+
+.features-image img {
+    width: 100%;
+}
+
+.features-demo {
+    bottom: -60px;
+    left: 75px;
+}
+    
 }
 
 /* tablet devices */
@@ -134,11 +204,10 @@ main {
 
     .team-container {
         flex-direction: column;
-        margin-left: 0px;
     }
 
-    .team-content {
-        padding-left: 130px;
+    .features {
+        flex-direction: column;
     }
 
 }
